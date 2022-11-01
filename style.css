@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: rgb(255, 204, 0);
 }
 .navbar{
     width: 100vw;
-    border: solid 3px black;
-    height: 16vh;
-    background-color: black;
+    height: 17vh;
     display: flex;
     justify-content: center;
+    position: fixed;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 90%;
+    border-bottom-left-radius: 90%;
     
 }
 .navbar .container{
@@ -15,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 80%;
-    height: 10vh;
+    height: 11vh;
     margin: auto;
 }
 .navbar .quiz{
@@ -24,11 +32,11 @@ body{
     justify-content: center;
     align-items: center;
     padding-left: 4vw;
-    padding-right: 11vw;
+    padding-right: 6vw;
     
 }
 .navbar .quiz span{
-    color: rgb(255, 204, 0);
+    color:black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
 }
@@ -38,18 +46,20 @@ body{
     flex-direction: column;
 }
 .navbar .img{
-    width: 28vh;
+    width: 19vh;
     height: 14vh;
-    padding-left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 2vw;
+    
 }
 .navbar .logo span{
-    color: rgb(255, 204, 0);
-    font-size: 28px;
+    color:black;
+    font-size: 24px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 12px;
+    
+    
 }
 .navbar .lista{
     /* border: solid 3px white; */
@@ -59,13 +69,43 @@ body{
     padding-right: 4vw;
 }
 .navbar .lista ul{
-    color: rgb(255, 204, 0);
+    color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 32px;
 }
 .canva{
-    width: 80%;
-    height: 85vh;
+    /* border: solid blue; */
+    width: 100vw;
+    height: 100vh;
     margin: auto;
-    border: solid blue;
+    background-image: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.canva .container{
+    border: solid 3px white;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+.canva .container .sobre{
+    width: 31vw;
+    height: 45vh;
+    margin-top:15%;
+    margin-right: 3%;
+    border-radius: 3%;
+    backdrop-filter: blur(3px);
+    padding-left: 10px;
+    display: flex;
+    
+    
+}
+.canva .container .sobre span{
+    padding-left: 0;
+    font-size: 50px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
 }
