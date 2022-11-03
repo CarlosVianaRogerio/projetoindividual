@@ -74,16 +74,16 @@
 }
 .esquerda{
     border: solid 3px black;
-    width: 10%;
+    width: 20%;
     height: 100vh;
     background-image: url(img/fundo\ login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 17%;
+    background-position: 14%;
 }
 .direita{
     border: solid 3px black;
-    width: 10%;
+    width: 20%;
     height: 100vh;
     background-image: url(img/fundo\ login.jpg);
     background-repeat: no-repeat;
@@ -112,7 +112,8 @@
 .login .container .caixaLogin{
     border: solid 3px black;
     width: 33vw;
-    height: 50vh;
+    height: 75vh;
+    margin-top: 10% ;
     display: flex;
     justify-content: center;
     align-items: center;
