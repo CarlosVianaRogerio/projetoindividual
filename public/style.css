@@ -47,14 +47,14 @@
 }
 .banner .container{
     width: 100vw;
-    height: 55vh;
+    height: 100vh;
     background-image: url(assets/banner\ fundo.webp);
     background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-position: center center;
     background-size: cover;
 }
 .significado .container{
-    
+    padding-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +63,7 @@
     
 }
 .significado .container .imagens{
-    
+    padding-top: 1%;
     width: 80vw;
     display: flex;
 
@@ -77,6 +77,34 @@ align-items: center;
 width: 25vw;
 }
 
+.imagem1-1{
+    background-image: url(assets/img-atividade-fisica.webp);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+}
+
+.imagem1-2{
+    background-image: url(assets/autoestima-fundo.jpg);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+}
+.imagem1-3{
+    background-image: url(assets/estilo-de-vida-imagem.jpg);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+}
 .significado .container .imagens .imagem2{
 
 display: flex;
@@ -96,7 +124,7 @@ width: 25vw;
 .escrita{
     
     font-family: 'roboto', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-style: bold;
     font-weight: 600;
 }
