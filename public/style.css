@@ -194,7 +194,7 @@ width: 25vw;
 }
 
 .beneficios .container{
-    padding-top: 10vh;
+    padding-top: 25vh;
     display: flex;
     flex-direction: column;
     width: 80vw;
@@ -207,85 +207,124 @@ width: 25vw;
     display: flex;
 }
 .imagensBeneficios{
-    border: black 3px solid;
+    margin-top: 5%;
     width: 80vw;
     height: 90vh;
 }
 .imagensBeneficios .imagensCima{
-    border: black 3px solid;
+    
     width: 70vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
     height: 40vh;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 .imagensBeneficios .imagensCima .imgCima1{
-    border: black 3px solid;
+    
     width: 21vw;
-    height: 40vh;
+    height: 39vh;
+
 }
 .imagensBeneficios .imagensCima .imgCima2{
-    border: black 3px solid;
+
     width: 21vw;
-    height: 40vh;
+    height: 39vh;
 }
 .imagensBeneficios .imagensCima .imgCima3{
-    border: black 3px solid;
+ 
     width: 21vw;
-    height: 40vh;
+    height: 39vh;
 }
 .imagensBeneficios .imagensBaixo{
-    border: black 3px solid;
+    
     width: 46vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    height: 40vh;
+    height: 39vh;
 }
 .imagensBeneficios .imagensBaixo .imgBaixo1{
-    border: black 3px solid;
     width: 21vw;
-    height: 40vh;
+    height: 39vh;
+    
 }
 .imagensBeneficios .imagensBaixo .imgBaixo2{
-    border: black 3px solid;
     width: 21vw;
-    height: 40vh;
+    height: 39vh;
+
 }
 
 .imgReal1{
-    border: solid 3px black;
+    
     width:21vw;
     height: 27vh;
     background-image: url(assets/qualidadedosonoimg.webp);
     background-size: cover;
 }
 .imgReal2{
-    border: solid 3px black;
+    
     width:21vw;
     height: 27vh;
-    background-image: url(assets/qualidadedosonoimg.webp);
+    background-image: url(assets/diabestesimg.jpg);
     background-size: cover;
 }
 .imgReal3{
-    border: solid 3px black;
+    
     width:21vw;
     height: 27vh;
-    background-image: url(assets/qualidadedosonoimg.webp);
+    background-image: url(assets/vidasexualimg.webp);
     background-size: cover;
 }
 .imgReal4{
-    border: solid 3px black;
+
     width:21vw;
     height: 27vh;
-    background-image: url(assets/qualidadedosonoimg.webp);
+    background-image: url(assets/cardiovascularimg.jpg);
     background-size: cover;
 }
 .imgReal5{
-    border: solid 3px black;
+
     width:21vw;
     height: 27vh;
-    background-image: url(assets/qualidadedosonoimg.webp);
+    background-image: url(assets/depressaoimg.jpg);
+    background-position: 70%;
     background-size: cover;
+}
+.escritaimg{
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 21px;
+    font-style: bold;
+    font-weight: 700;
+}
+.escritaimgg{
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    font-weight: 700;
+}
+.descimg{
+    
+    
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-style: bold;
+    font-weight: 700;
+
+}
+.containerdesc{
+    width: 21vw;
+    background-color: #fbe77b;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+
 }
