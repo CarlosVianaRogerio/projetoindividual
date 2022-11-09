@@ -66,6 +66,7 @@
     padding-top: 1%;
     width: 80vw;
     display: flex;
+    padding-bottom: 10%;
 
 }
 .significado .container .imagens .imagem1{
@@ -124,7 +125,167 @@ width: 25vw;
 .escrita{
     
     font-family: 'roboto', sans-serif;
-    font-size: 30px;
+    font-size: 33px;
     font-style: bold;
-    font-weight: 600;
+    font-weight: 900;
+}
+
+.etudoisso .container{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+}
+.etudoisso .container .titulo{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+.containerConteudo{
+    height: 85vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.containerConteudo .containerEscrita{
+    margin-top: 3%;
+    width: 35vw;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.atvFisica{
+    margin-top: 4%;
+    width: 30vw;
+    height: 27vh;
+}
+.autoestima{
+    margin-top: 4%;
+    width: 30vw;
+    height: 27vh;
+}
+.estiloVida{
+    margin-top: 4%;
+    width: 30vw;
+    height: 27vh;
+}
+.descri{
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 700;
+}
+.containerimg{
+    width: 35vw;
+    height: 85vh;
+    margin-top: 3%;
+}
+.imgtudoisso{
+    background-image: url(assets/tudoissoimg.webp);
+    background-position: 10%;
+    width: 35vw;
+    height: 85vh;
+    background-size: cover;
+    border: solid 2px black;
+    border-radius: 2%;
+}
+
+.beneficios .container{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+}
+.beneficios .container .titulo{
+    width: 80vw;
+    justify-content: center;
+    display: flex;
+}
+.imagensBeneficios{
+    border: black 3px solid;
+    width: 80vw;
+    height: 90vh;
+}
+.imagensBeneficios .imagensCima{
+    border: black 3px solid;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    margin-bottom: 4%;
+}
+.imagensBeneficios .imagensCima .imgCima1{
+    border: black 3px solid;
+    width: 21vw;
+    height: 40vh;
+}
+.imagensBeneficios .imagensCima .imgCima2{
+    border: black 3px solid;
+    width: 21vw;
+    height: 40vh;
+}
+.imagensBeneficios .imagensCima .imgCima3{
+    border: black 3px solid;
+    width: 21vw;
+    height: 40vh;
+}
+.imagensBeneficios .imagensBaixo{
+    border: black 3px solid;
+    width: 46vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+.imagensBeneficios .imagensBaixo .imgBaixo1{
+    border: black 3px solid;
+    width: 21vw;
+    height: 40vh;
+}
+.imagensBeneficios .imagensBaixo .imgBaixo2{
+    border: black 3px solid;
+    width: 21vw;
+    height: 40vh;
+}
+
+.imgReal1{
+    border: solid 3px black;
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/qualidadedosonoimg.webp);
+    background-size: cover;
+}
+.imgReal2{
+    border: solid 3px black;
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/qualidadedosonoimg.webp);
+    background-size: cover;
+}
+.imgReal3{
+    border: solid 3px black;
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/qualidadedosonoimg.webp);
+    background-size: cover;
+}
+.imgReal4{
+    border: solid 3px black;
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/qualidadedosonoimg.webp);
+    background-size: cover;
+}
+.imgReal5{
+    border: solid 3px black;
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/qualidadedosonoimg.webp);
+    background-size: cover;
 }
