@@ -32,6 +32,7 @@
     height: 80vh;
     border: solid 3px black;
     background-color: #ffffff;
+    border-radius: 3%;
 }
 .tituloLogin{
     width: 32vw;
