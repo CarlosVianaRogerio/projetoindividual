@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+.borra{
+    backdrop-filter: blur(4px);
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerFundo{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-image: url(assets/fundo-login.webp);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerFundo .container{
+    width: 32vw;
+    height: 95vh;
+    border: solid 3px black;
+    background-color: #ffffff;
+    border-radius: 3%;
+}
+.tituloLogin{
+    width: 32vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloLog{
+    font-family: 'roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.containerInputs{
+    width: 32vw;
+    height: 54vh;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.email{
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+.nome{
+    margin-bottom: 4%;
+    width: 25vw;
+    flex-direction: column;
+    display: flex;
+    
+}
+.senha{
+    width: 25vw;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 4%;
+}
+.confirmaSenha{
+    width: 25vw;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 4%;
+}
+span{
+    font-family: 'roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+
+}
+.confirma{
+    font-family: 'roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+}
+input{
+    border: black 2px solid;
+    background-color:#D9D9D9;
+    width: 25vw;
+    height: 8vh;
+    border-radius: 3%;
+}
+.containerBotao{
+    width: 25vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    width: 15vw;
+    height: 9vh;
+    border: solid 2px black;
+    border-radius: 4%;
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
