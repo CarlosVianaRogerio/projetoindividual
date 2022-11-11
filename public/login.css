@@ -95,3 +95,20 @@ input{
     justify-content: center;
     align-items: center;
 }
+.ancora{
+    margin-top: 1%;
+    width: 25vw;
+    justify-content: center;
+    display: flex;
+}
+.ancor{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+.amarelo{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #ffd000;
+}
