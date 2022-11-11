@@ -328,3 +328,233 @@ width: 25vw;
     padding-left: 4%;
 
 }
+.beneficiosMentais .container{
+    margin: auto;
+    margin-top: 27%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+}
+.beneficiosMentais .container .titulo{
+
+    width: 80vw;
+    justify-content: center;
+    display: flex;
+}
+.beneficiosMentais .container .containerTudo{
+    padding-left: 5%;
+    margin-top: 5%;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras{
+    width: 38vw;
+    height: 83vh;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras .ben1{
+    width: 38vw;
+    height: 16vh;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras .ben2{
+    width: 38vw;
+    margin-top: 2%;
+    height: 16vh;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras .ben3{
+    width: 36vw;
+    margin-top: 2%;
+    height: 16vh;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras .ben4{
+    width: 37vw;
+    margin-top: 2%;
+    height: 16vh;
+    
+}
+.beneficiosMentais .container .containerTudo .containerLetras .ben5{
+    width: 37vw;
+    margin-top: 2%;
+    height: 16vh;
+    
+}
+.escritaa{
+    background-color: #fff500;
+    font-family: 'roboto', sans-serif;
+    font-size: 25px;
+    font-style: bold;
+    font-weight: 900;
+}
+.leg{
+    font-family: 'roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+.containerFoto{
+    width: 40vw;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fotoReal{
+    width: 35vw;
+    height: 65vh;
+    border: solid 2px black;
+    border-radius: 3%;
+    background-image: url(assets/imgmentais.webp);
+    background-position: 70% center;
+    background-size: cover;
+}
+.relatosPessoais .container{
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+}
+.relatosPessoais .container .titulo{
+    width: 80vw;
+    justify-content: center;
+    display: flex;
+}
+.relatosPessoais .container .containerTudao{
+    
+    margin-top: 5%;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    
+}
+.relato1{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 58vw;
+    height: 25vh;
+    
+}
+.relato2{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 58vw;
+    height: 25vh;
+    
+}
+.relato3{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 58vw;
+    height: 25vh;
+    
+}
+.imggg{
+    border: solid 2px black;
+    width: 10vw;
+    height: 19vh;
+    border-radius: 50%;
+    background-image: url(assets/RELATO-ste.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.imggg2{
+    border: solid 2px black;
+    width: 10vw;
+    height: 19vh;
+    border-radius: 50%;
+    background-image: url(assets/RELATO-andres.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.imggg3{
+    border: solid 2px black;
+    width: 10vw;
+    height: 19vh;
+    border-radius: 50%;
+    background-image: url(assets/RELATO-mãe.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.relatoLeg{
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.tudaoescrito{
+    width: 58vw;
+    height: 75vh;
+    
+}
+.imgss{
+    width: 30vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.relatoCriador .container {
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 90vh;
+}
+.relatoCriador .container .titulo{
+    width: 80vw;
+    justify-content: center;
+    display: flex;
+}
+.containertudin{
+    margin-top: 4%;
+    width: 80vw;
+    height: 90vh;
+}
+.escritao{
+    margin: auto;
+    width: 70vw;
+    height: 53vh;
+}
+.escrii{
+    font-family: 'roboto', sans-serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+.imgeu{
+    margin-right: 6%;
+    float: right;
+    width: 27vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eureal{
+    float: right;
+    width: 22vw;
+    height: 35vh;
+    border: solid 2px black;
+    border-radius: 3%;
+    background-image: url(assets/relato-eu2.jpg);
+    background-position: 0 85%;
+    background-size: cover;
+}
+.euescrito{
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
