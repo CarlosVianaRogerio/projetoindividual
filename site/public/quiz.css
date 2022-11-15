@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+.Quiz .modalQuiz{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Quiz .modalQuiz .container{
+    width: 55vw;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: solid 8px #fff500;
+    
+}
+.voltar{
+    height: 60vh;
+
+}
+.botaoVoltar {
+    height: 60vh;
+    width: 2vw;
+}
+.avancar{
+    height: 60vh;
+}
+.botaoAvancar {
+    height: 60vh;
+    width: 2vw;
+    border: #fff500 solid 5px;
+}
+.containerMenor {
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+    align-items: center;
+    flex-direction: column;
+}
+.resposta{
+    width: 27vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    width: 4vw;
+    height: 4vh;
+    
+}

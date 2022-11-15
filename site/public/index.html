@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="modal.js"></script>
     
     <title>Home Page</title>
 </head>
@@ -212,6 +214,23 @@
     <section class="footer">
         <div class="container">
             <span class="escrita">Bodybuild is Quality of Life</span>
+        </div>
+    </section>
+
+    <section class="Quiz">
+        <div class="modalQuiz" id="modal">
+            <div class="container">
+                <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><</button></div>
+                    <div class="containerMenor">
+                <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
+                    <div class="pergunta"><span class="escrita">Você pratica musculação atualmente?</span></div>
+                        <div class="resposta">
+                            <div class="boxin"><input class="box" type="checkbox"><span class="escrita">SIM</span></div>
+                            <div class="boxin"><input class="box" type="checkbox"><span class="escrita">NÃO</span></div>
+                        </div>
+                    </div>
+                    <div class="avancar"><button class ="botaoAvancar onclick="avancar()">></button></div>
+            </div>
         </div>
     </section>
 </body>
