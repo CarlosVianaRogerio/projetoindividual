@@ -558,3 +558,42 @@ width: 25vw;
     font-size: 20px;
     font-weight: 600;
 }
+.quiz .container{
+    margin: auto;
+    margin-top: 7%;
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quiz .container .botaozao{
+    width: 27vw;
+    height: 22vh;
+    margin: 10%;
+    border-radius: 4%;
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.palavrona{
+    font-family: 'roboto', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+.footer .container{
+    width: 100vw;
+    height: 15vh;
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo2{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
