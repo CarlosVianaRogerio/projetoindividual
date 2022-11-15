@@ -118,6 +118,10 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8%;
+}
+.botao :hover{
+    border: solid 4px black;
 }
 .pratica {
     font-family: 'roboto', sans-serif;

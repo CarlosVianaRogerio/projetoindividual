@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastro.css">
     <link rel="stylesheet" href="style.css">
+    <script src="js/funcoes.js"></script>
     <title>Cadastro</title>
 </head>
 <body>
@@ -35,15 +36,8 @@
                         <input type="password" id="confirmacao_senha_input">
                         </div>
 
-                        <div class="praticante">
-                            <span class="pratica">Você pratica musculação atualmente?</span>
-                            <div class="boxx">
-                                <input class = "box" type="checkbox" value = "yes" id="box1_input">
-                                <input class = "box" type="checkbox" value = "no" id="box2_input">
-                            </div>
-                        </div>
                         
-                        <div class="containerBotao">
+                        <div class="containerBotao" onclick= "cadastrar()">
                             <div class="botao"><span class="botaospan">Cadastrar</span></div>
                         </div>
                     </div>
@@ -65,12 +59,9 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        var box1 = box1_input.value;
-        var box2 = box2_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || (box1 == box2 || box1 == "" && box2 == "")) {
-            cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+            alert('Preencha todos os campos')
 
             finalizarAguardar();
             return false;
