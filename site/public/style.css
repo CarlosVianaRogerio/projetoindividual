@@ -577,6 +577,7 @@ width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .palavrona{
     font-family: 'roboto', sans-serif;
