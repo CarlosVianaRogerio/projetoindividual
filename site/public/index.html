@@ -218,7 +218,7 @@
     </section>
 
     <section class="Quiz" id="modal-quiz">
-        <div class="modalQuiz" id="pagina1" style="display: block;">
+        <div class="modalQuiz" id="pagina1" style="display: flex;">
             <div class="container">
                 
                 <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><</button></div>
@@ -276,7 +276,7 @@
                     <div class="containerMenor">
                         <button class="fechar">X</button>
                 <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
-                    <div class="pergunta"><span class="escrita">Tem dificuldades com o sono?</span></div>
+                    <div class="pergunta"><span class="escrita">Sofre de dor nas costa?</span></div>
                         <div class="resposta">
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">SIM</span></div>
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">NÃO</span></div>
@@ -293,7 +293,7 @@
                     <div class="containerMenor">
                         <button class="fechar">X</button>
                 <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
-                    <div class="pergunta"><span class="escrita">Tem dificuldades com o sono?</span></div>
+                    <div class="pergunta"><span class="escrita">PAG5?</span></div>
                         <div class="resposta">
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">SIM</span></div>
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">NÃO</span></div>
@@ -303,14 +303,14 @@
             </div>
         </div>
 
-        <div class="modalQuiz fundo" id="pagina6" style="display: none;">
+        <div class="modalQuiz" id="pagina6" style="display: none;">
             <div class="container">
                 
                 <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><</button></div>
                     <div class="containerMenor">
                         <button class="fechar">X</button>
                 <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
-                    <div class="pergunta"><span class="escrita">Tem dificuldades com o sono?</span></div>
+                    <div class="pergunta"><span class="escrita">PAG6?</span></div>
                         <div class="resposta">
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">SIM</span></div>
                             <div class="boxin"><input class="box" type="checkbox"><span class="escrita">NÃO</span></div>
@@ -347,31 +347,61 @@
     var quizPag = 0;
 
     function voltar(){
-    if (quizPag >= 0){
+    if (quizPag > 0){
     quizPag--
     }
+    
+    if (quizPag == 0){
+        document.getElementById("pagina2").style.display = "none";
+        document.getElementById("pagina1").style.display = "flex";
     }
+    if (quizPag == 1){
+        document.getElementById("pagina3").style.display = "none";
+        document.getElementById("pagina2").style.display = "flex";
+    }
+    if (quizPag == 2){
+        document.getElementById("pagina4").style.display = "none";
+        document.getElementById("pagina3").style.display = "flex";
+    }
+    if (quizPag == 3){
+        document.getElementById("pagina5").style.display = "none";
+        document.getElementById("pagina4").style.display = "flex";
+    }
+    if (quizPag == 4){
+        document.getElementById("pagina6").style.display = "none";
+        document.getElementById("pagina5").style.display = "flex";
+    }
+    if (quizPag == 5){
+        document.getElementById("pagina6").style.display = "none";
+        document.getElementById("pagina5").style.display = "flex";
+    }
+}
 
     function avancar(){
     if (quizPag < 5){
     quizPag++
+    }
     if (quizPag == 1){
-        
+        document.getElementById("pagina1").style.display = "none";
+        document.getElementById("pagina2").style.display = "flex";
     }
     if (quizPag == 2){
-
+        document.getElementById("pagina2").style.display = "none";
+        document.getElementById("pagina3").style.display = "flex";
     }
     if (quizPag == 3){
-
+        document.getElementById("pagina3").style.display = "none";
+        document.getElementById("pagina4").style.display = "flex";
     }
     if (quizPag == 4){
-
+        document.getElementById("pagina4").style.display = "none";
+        document.getElementById("pagina5").style.display = "flex";
     }
     if (quizPag == 5){
-
+        document.getElementById("pagina5").style.display = "none";
+        document.getElementById("pagina6").style.display = "flex";
     }
-    }
-    }
+}
     </script>
 </body>
 </html>

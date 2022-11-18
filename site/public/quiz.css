@@ -21,18 +21,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.modalQuiz.fundo{
     background: rgba(0,0,0,.5);
+    
 }
+
 .Quiz.mostrar{
     display: flex;
-
+    
 }
 @keyframes modalQuiz {
     from {
         opacity: 0;
-        transform: translate3d(0, -60px, 0);
+        transform: translate3d(0, 0px, 0);
     }
     to {
         opacity: 1;
