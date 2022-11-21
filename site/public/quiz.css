@@ -54,10 +54,11 @@
     position: relative;
     
 }
+
 .fechar{
     position: absolute;
-    top: -100px;
-    right: -100px;
+    top: -80px;
+    right: -80px;
     width: 40px;
     height: 40px;
     border-radius: 25%;
@@ -77,16 +78,10 @@
     cursor: pointer;
 }
 .avancar{
-    height: 60vh;
-}
-
-.botaoAvancar {
     height: 58vh;
     width: 2vw;
     background-color: #000000;
-    border: none;
-    cursor: pointer;
-    
+    border: none; 
 }
 
 .containerMenor {
@@ -109,6 +104,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    border: #000000 1px solid;
+    border-radius: 10%;
+    
+}
+.boxin :hover{
+    background-color: rgba(255, 251, 1, 0.5);
+    
 }
 .box{
     width: 4vw;
@@ -119,4 +122,31 @@
     color: white;
     font-size: 25px;
 }
-
+.botaozaozao{
+    width: 27vw;
+    height: 22vh;
+    border-radius: 4%;
+    background-color: #fff500;
+    border: #000000 solid 2px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.containerResult{
+    width: 65vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: solid 8px #000000;
+    border-bottom: #000000 solid 15px;
+    border-top: #000000 solid 15px;
+    position: relative;
+}
+.results{
+    margin-top: 10%;
+    border: solid 2px black;
+    width: 55vw;
+    height: 75vh;
+}

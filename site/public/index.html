@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="quiz.css">
     <script src="modal.js"></script>
+    <script src="quiz.js"></script>
     
     <title>Home Page</title>
 </head>
@@ -227,11 +228,11 @@
                 <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
                     <div class="pergunta"><span class="escrita">Você pratica musculação atualmente?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input type="radio" name = "pratica" id = "ipt_sim_pratica" value = "sim" class="box"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input type="radio" name = "pratica" id = "ipt_nao_pratica" value = "nao" class="box"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="praticaSim()"><span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="praticaNao()"><span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
 
@@ -244,11 +245,11 @@
                 <div class="titulo"><span class="escrita">QUIZ 1</span></div>
                     <div class="pergunta"><span class="escrita">Tem problemas com autoestima ou desânimo?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input class="box" id = "ipt_sim_estima" value = "sim" type="radio" name = "estima"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input class="box" id = "ipt_nao_estima" value = "nao" type="radio" name = "estima"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="estimaSim()"><span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="estimaNao()"><span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
         
@@ -261,11 +262,11 @@
                 <div class="titulo"><span class="escrita">QUIZ 2</span></div>
                     <div class="pergunta"><span class="escrita">Tem dificuldades com o sono?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input class="box" id = "ipt_sim_sono" value = "sim" type="radio" name = "sono"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input class="box" id = "ipt_nao_sono" value = "nao" type="radio" name = "sono"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="sonoSim()"><span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="sonoNao()"><span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
 
@@ -278,11 +279,11 @@
                 <div class="titulo"><span class="escrita">QUIZ 3</span></div>
                     <div class="pergunta"><span class="escrita">Sofre de dor nas costa?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input class="box" id = "ipt_sim_costas" value = "sim" type="radio" name = "costas"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input class="box" id = "ipt_nao_costas" value = "nao" type="radio" name = "costas"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="costaSim()"><span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="costaNao()"><span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
 
@@ -295,11 +296,11 @@
                 <div class="titulo"><span class="escrita">QUIZ 4</span></div>
                     <div class="pergunta"><span class="escrita">Anda estressado ultimamente?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input class="box" id = "ipt_sim_estresse" value = "sim" type="radio" name = "estresse"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input class="box" id = "ipt_nao_estresse" value = "nao" type="radio" name = "estresse"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="estresseSim()"><span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="estresseNao()"><span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
 
@@ -312,11 +313,11 @@
                 <div class="titulo"><span class="escrita">QUIZ 5</span></div>
                     <div class="pergunta"><span class="escrita">Tem dificuldade de concentração?</span></div>
                         <div class="resposta">
-                            <div class="boxin"><input class="box" id ="ipt_sim_concentracao" value = "sim" type="radio" name = "concentracao"><span class="escrita">SIM</span></div>
-                            <div class="boxin"><input class="box" id = "ipt_nao_concentracao" value = "nao" type="radio" name = "concentracao"><span class="escrita">NÃO</span></div>
+                            <div class="boxin" onclick ="concentracaoSim()"> <span class="escrita">SIM</span></div>
+                            <div class="boxin" onclick ="concentracaoNao()"> <span class="escrita">NÃO</span></div>
                         </div>
                     </div>
-                <div class="avancar"><button class ="botaoAvancar" onclick ="avancar()"><span class="simbolo">></span></button></div>
+                <div class="avancar"></div>
             </div>
         </div>
 
@@ -326,8 +327,8 @@
                 <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><span class="simbolo"><</span></button></div>
                     <div class="containerMenor">
                         <button class="fechar">X</button>
-                <div class="titulo"><span class="escrita">Ver Resultados</span></div>
-                    <div class="pergunta"><div class="botaozao" onclick="resultado()">
+                <div class="titulo"><span class="escrita">Ver Seus Resultados</span></div>
+                    <div class="pergunta"><div class="botaozaozao" onclick="resultado()">
                         <div class="palavrona" >Resultados</div>
                     </div>
                 </div>
@@ -336,104 +337,31 @@
                 <div class="avancar"><button class ="botaoAvancar"></button></div>
             </div>
         </div>
-        
-    <script>
 
-    function iniciaModal(modalid){
-        const modal = document.getElementById(modalid);{
-        modal.classList.add('mostrar');
 
-        modal.classList.add('mostrar');
-					modal.addEventListener('click', (e) => {
-						if(e.target.id == modalid || e.target.className == 'fechar') {
-							modal.classList.remove('mostrar');
-							localStorage.fechaModal = modalid;
-						}
-    
-                    });
-                }
-    }
-    function abrirModal(){
-        iniciaModal('modal-quiz')}
+        <div class="modalQuiz" id="pagina8" style="display: none;">
+            <div class="containerResult">
+                
+               
+                    <div class="containerMenor">
+                        <button class="fechar">X</button>
+                <div class="titulo"><span class="escrita">Resultados</span></div>
+                    <div class="results">
+                        <div class="pratica"><span id="pratica" class="escritaResults">Pratica Musculação:Está em um bom caminho :)</span></div>
+                        <div class="estima"><span id="estima" class="escritaResults">A mudança corporal e a liberação de hormonios produzidos pela musculação fará com que você tenha uma maior autoestima</span></div>
+                        <div class="sono"><span id="sono" class="escritaResults"></span></div>
+                        <div class="dor"><span id="dor" class="escritaResults"></span></div>
+                        <div class="estresse"><span id="estresse" class="escritaResults"></span></div>
+                        <div class="concentracao"><span id="concentracao" class="escritaResults"></span></div>
+                    </div>
+                       
+                    </div>
+               
+            </div>
+        </div>
 
-    </script>
-    </section>
 
-    <script>
-    var resultado_pratica = 0;
-    var resultado_estima = 0;
-    var resultado_sono = 0;
-    var resultado_costa = 0;
-    var resultado_estressado = 0;
-    var resultado_concentracao = 0;
-    var quizPag = 0;
-
-    function voltar(){
-    if (quizPag > 0){
-    quizPag--
-    }
-    
-    if (quizPag == 0){
-        document.getElementById("pagina2").style.display = "none";
-        document.getElementById("pagina1").style.display = "flex";
-    }
-    if (quizPag == 1){
-        document.getElementById("pagina3").style.display = "none";
-        document.getElementById("pagina2").style.display = "flex";
-    }
-    if (quizPag == 2){
-        document.getElementById("pagina4").style.display = "none";
-        document.getElementById("pagina3").style.display = "flex";
-    }
-    if (quizPag == 3){
-        document.getElementById("pagina5").style.display = "none";
-        document.getElementById("pagina4").style.display = "flex";
-    }
-    if (quizPag == 4){
-        document.getElementById("pagina6").style.display = "none";
-        document.getElementById("pagina5").style.display = "flex";
-    }
-    if (quizPag == 5){
-        document.getElementById("pagina7").style.display = "none";
-        document.getElementById("pagina6").style.display = "flex";
-    }
-}
-
-    function avancar(){
-    if((ipt_sim_pratica.checked || ipt_nao_pratica.checked) || (ipt_sim_estima.checked || ipt_nao_estima.checked) || (ipt_sim_sono.checked || ipt_nao_sono.checked) || (ipt_sim_costa.checked || ipt_nao_costa.checked) || (ipt_sim_estresse.checked || ipt_nao_estresse.checked) || (ipt_sim_concentracao.checked || ipt_nao_concentracao.checked)){
-    resultado_pratica = ipt_sim_pratica.checked;
-    if (quizPag < 6){
-    quizPag++
-    }
-    if (quizPag == 1){
-        document.getElementById("pagina1").style.display = "none";
-        document.getElementById("pagina2").style.display = "flex";
-    }
-    if (quizPag == 2){
-        document.getElementById("pagina2").style.display = "none";
-        document.getElementById("pagina3").style.display = "flex";
-    }
-    if (quizPag == 3){
-        document.getElementById("pagina3").style.display = "none";
-        document.getElementById("pagina4").style.display = "flex";
-    }
-    if (quizPag == 4){
-        document.getElementById("pagina4").style.display = "none";
-        document.getElementById("pagina5").style.display = "flex";
-    }
-    if (quizPag == 5){
-        document.getElementById("pagina5").style.display = "none";
-        document.getElementById("pagina6").style.display = "flex";
-    }
-    if (quizPag == 6){
-        document.getElementById("pagina6").style.display = "none";
-        document.getElementById("pagina7").style.display = "flex";
-    }
-} 
-    
-}
-    
-
-    </script>
+        </section> 
+   
 </body>
 </html>
