@@ -48,9 +48,9 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    border: solid 8px #fff500;
-    border-bottom: #fff500 solid 15px;
-    border-top: #fff500 solid 15px;
+    border: solid 8px #000000;
+    border-bottom: #000000 solid 15px;
+    border-top: #000000 solid 15px;
     position: relative;
     
 }
@@ -72,7 +72,7 @@
 .botaoVoltar {
     height: 58vh;
     width: 2vw;
-    background-color: #fff500;
+    background-color: #000000;
     border: none;
     cursor: pointer;
 }
@@ -83,7 +83,7 @@
 .botaoAvancar {
     height: 58vh;
     width: 2vw;
-    background-color: #fff500;
+    background-color: #000000;
     border: none;
     cursor: pointer;
     
@@ -114,5 +114,9 @@
     width: 4vw;
     height: 4vh;
     cursor: pointer;
+}
+.simbolo{
+    color: white;
+    font-size: 25px;
 }
 
