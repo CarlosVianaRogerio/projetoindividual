@@ -115,7 +115,7 @@
     }
     if (quizPag == 7){
         document.getElementById("pagina7").style.display = "none";
-        document.getElementById("pagina8").style.display = "flex";
+        document.getElementById("resultsEstima").style.display = "flex";
     }
 } 
 
