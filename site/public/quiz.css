@@ -146,6 +146,19 @@
     flex-direction: column;
 
 }
+.containerResultado{
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: solid 5px black;
+    border-radius: 4%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
+}
 .containerdescc{
     width: 21vw;
     background-color: #fbe77b;
