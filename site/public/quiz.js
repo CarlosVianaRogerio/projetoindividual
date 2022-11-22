@@ -153,7 +153,7 @@
 
 
 function resultsAvancar(){
-    if (resultsPag < 5){
+    if (resultsPag < 6){
     var teste = 1;
     if (resultsPag == 0 && resultado_sono == 'sim'){
         teste = 0
@@ -195,6 +195,17 @@ function resultsAvancar(){
         document.getElementById("resultsConcentracao").style.display = "none";
         document.getElementById("resultsEstima").style.display = "flex";
 
+    }else if (resultsPag == 5){
+        teste = 0
+        resultsPag++
+        document.getElementById("resultsPratica").style.display = "none";
+        document.getElementById("resultsSono").style.display = "none";
+        document.getElementById("resultsCosta").style.display = "none";
+        document.getElementById("resultsEstresse").style.display = "none";
+        document.getElementById("resultsConcentracao").style.display = "none";
+        document.getElementById("resultsEstima").style.display = "none";
+        document.getElementById("resultsLeaderboard").style.display = "flex";
+    
     }else {
         for (let index = 0; index < teste; index++) {
         resultsPag++     
