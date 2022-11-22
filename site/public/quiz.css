@@ -146,6 +146,16 @@
     flex-direction: column;
 
 }
+.containerdescc{
+    width: 21vw;
+    background-color: #fbe77b;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+
+}
 /* .results{
     border: solid 2px black;
     width: 55vw;
