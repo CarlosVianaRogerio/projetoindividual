@@ -132,7 +132,7 @@
     
     if (resultsPag == 0){
         document.getElementById("resultsSono").style.display = "none";
-        document.getElementById("resultsEstima").style.display = "flex";
+        document.getElementById("resultsPratica").style.display = "flex";
     }
     if (resultsPag == 1){
         document.getElementById("resultsCosta").style.display = "none";
@@ -147,7 +147,7 @@
         document.getElementById("resultsEstresse").style.display = "flex";
     }
     if (resultsPag == 4){
-        document.getElementById("resultsPratica").style.display = "none";
+        document.getElementById("resultsEstima").style.display = "none";
         document.getElementById("resultsConcentracao").style.display = "flex";
     }
     // if (resultsPag == 5){
@@ -173,7 +173,6 @@ function resultsAvancar(){
     if (resultado_costa == 'nao'){
         resultsPag++
     }
-
     if (resultsPag == 3 && resultado_estresse == 'sim'){
         document.getElementById("resultsCosta").style.display = "none";
         document.getElementById("resultsEstresse").style.display = "flex";
