@@ -125,36 +125,33 @@
 
     var resultsPag = 0;
 
-    function resultsVoltar(){
-    if (resultsPag > 0){
-    resultsPag--
-    }
+    // function resultsVoltar(){
+    // if (resultsPag > 0){
+    // resultsPag--
+    // }
     
-    if (resultsPag == 0){
-        document.getElementById("resultsSono").style.display = "none";
-        document.getElementById("resultsPratica").style.display = "flex";
-    }
-    if (resultsPag == 1){
-        document.getElementById("resultsCosta").style.display = "none";
-        document.getElementById("resultsSono").style.display = "flex";
-    }
-    if (resultsPag == 2){
-        document.getElementById("resultsEstresse").style.display = "none";
-        document.getElementById("resultsCosta").style.display = "flex";
-    }
-    if (resultsPag == 3){
-        document.getElementById("resultsConcentracao").style.display = "none";
-        document.getElementById("resultsEstresse").style.display = "flex";
-    }
-    if (resultsPag == 4){
-        document.getElementById("resultsEstima").style.display = "none";
-        document.getElementById("resultsConcentracao").style.display = "flex";
-    }
-    // if (resultsPag == 5){
-    //     document.getElementById("pagina7").style.display = "none";
+    // if (resultsPag == 0){
+    //     document.getElementById("resultsSono").style.display = "none";
     //     document.getElementById("resultsPratica").style.display = "flex";
     // }
-}
+    // if (resultsPag == 1){
+    //     document.getElementById("resultsCosta").style.display = "none";
+    //     document.getElementById("resultsSono").style.display = "flex";
+    // }
+    // if (resultsPag == 2){
+    //     document.getElementById("resultsEstresse").style.display = "none";
+    //     document.getElementById("resultsCosta").style.display = "flex";
+    // }
+    // if (resultsPag == 3){
+    //     document.getElementById("resultsConcentracao").style.display = "none";
+    //     document.getElementById("resultsEstresse").style.display = "flex";
+    // }
+    // if (resultsPag == 4){
+    //     document.getElementById("resultsEstima").style.display = "none";
+    //     document.getElementById("resultsConcentracao").style.display = "flex";
+    // }
+
+
 function resultsAvancar(){
     if (resultsPag < 5){
     var teste = 1;
