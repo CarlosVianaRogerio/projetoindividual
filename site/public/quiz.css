@@ -192,6 +192,42 @@ h5{
     background-image: url(assets/ResultsEstima.jpeg);
     background-size: cover;
 }
+.imgResultsSono{
+    
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/ResultsSono.webp);
+    background-size: cover;
+}
+.imgResultsCosta{
+    
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/ResultsCostas.webp);
+    background-size: cover;
+}
+.imgResultsEstresse{
+    
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/ResultsEstresse.jpg);
+    background-size: cover;
+}
+.imgResultsConcentracao{
+    
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/ResultsConcentracao.jpg);
+    background-size: cover;
+}
+.imgResultsPratica{
+    
+    width:21vw;
+    height: 27vh;
+    background-image: url(assets/ResultsPratica.jpg);
+    background-size: cover;
+}
+
 .descimgResults{
     
     
