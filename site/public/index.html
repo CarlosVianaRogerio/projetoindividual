@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="quiz.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="modal.js"></script>
     <script src="quiz.js"></script>
     
@@ -461,44 +462,54 @@
         <div class="modalQuiz" id="resultsReais" style="display: none;">
             <div class="containerResultado">
                 <button class="fechar">X</button>
-                <div class="imgCima1">
-                    <div class="imgResultsGrafico"></div>
-                        <p class="escritaimg">Ver resultados de outras pessoas</p>
-        
-                </div>
+                <div
+                class="chart-container"
+                style="position: relative; height: 35vh; width: 35vw">
+                <canvas id="myChart"></canvas>
+              </div>
 
-                <div class="navegar">
-                    <!-- <div class="voltarr" onclick="resultsVoltar()">Voltar</div> -->
-                    <div class="avancarr" onclick="resultsAvancar()">Resultados Gerais</div>
-                </div>
-                
             </div>
         </div>
-
-
-        <!-- <div class="modalQuiz" id="pagina8" style="display: none;">
-            <div class="containerResult">
-                
-               
-                    <div class="containerMenor">
-                        <button class="fechar">X</button>
-                <div class="titulo"><span class="escrita">Resultados</span></div>
-                    <div class="results">
-                        <div class="estima"><span id="estima" class="escritaResults"><h5>Autoestima:</h5> A mudança corporal e a liberação de hormonios produzidos pela musculação fará com que você tenha uma maior autoestima</span></div>
-                        <div class="sono"><span id="sono" class="escritaResults"><h5>Sono:</h5>Um dos maiores causadores da insônia é a ansieadade, que é diminuida significativamente com a musculação, além de cansar seu corpo com os exercícios, que ajudará você a pegar no sono</span></div>
-                        <div class="costa"><span id="costa" class="escritaResults"><h5>Dores nas costas:</h5>Na musculação existem inumeros exercícios que para a lombar, eles ajudaram você com relaçâo as dores nas costas</span></div>
-                        <div class="estresse"><span id="estresse" class="escritaResults"><h5>Estresse</h5>A prática de musculação servirá como uma terapia, alguns praticantes, chamam de refugio mental, la você cansa o corpo e descansa o cerebro</span></div>
-                        <div class="concentracao"><span id="concentracao" class="escritaResults"><h5>Concentracao</h5>Você libera endorfina durante os treinos, isso fará com que seu cerebro funcione melhor, e isso fará com que seu raciocínio melhore</span></div>
-                        <div class="pratica"><span id="pratica" class="escritaResults"><h5>Pratica Musculação:</h5>Está em um bom caminho, continue logo chegará a uma qualidade de vida excelente:)</span></div>
-                    </div>
-                       
-                    </div>
-               
-            </div>
-        </div> -->
-
-
         </section> 
    
 </body>
+
+<script>
+    const labels = ["Autoestima", "Sono", "Dor nas Costas", "Estresse", "Concentração"];
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Praticantes de musculação",
+          data: [5, 9, 7, 2, 8],
+          backgroundColor: ["rgba(255, 240, 0, 0.6)"],
+          borderColor: ["rgb(255, 240, 0)"],
+          borderWidth: 1,
+        },
+        {
+          label: "Não praticantes de musculação",
+          data: [10, 12, 5, 4, 9],
+          backgroundColor: ["rgba(0, 0, 0, 0.6)"],
+          borderColor: ["rgb(0, 0, 0)"],
+          borderWidth: 1,
+        },
+        
+      ],
+    };
+
+    const config = {
+      type: "bar",
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    const myChart = new Chart(document.getElementById("myChart"), config);
+  </script>
 </html>
