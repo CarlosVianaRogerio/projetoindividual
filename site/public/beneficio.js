@@ -24,3 +24,34 @@ function imagem3(){
     var borda = document.getElementById('imagem3').style.border = "solid 5px black"
     favorito = 3
 }
+function salvar(){
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+function graficos(){
+    var mostrar = document.getElementById('grafico').style.display='block'
+}
