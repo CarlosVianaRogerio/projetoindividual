@@ -568,7 +568,7 @@ width: 25vw;
     flex-direction: column;
     justify-content: center;
 }
-.quiz .container .botaozao{
+.botaozao{
     width: 27vw;
     height: 22vh;
     margin: 10%;
@@ -598,6 +598,85 @@ width: 25vw;
     justify-content: center;
     margin-top: 3%;
 }
-.pergunta{
+.significado .container .imagenss{
+    padding-top: 1%;
+    width: 80vw;
+    display: flex;
+    padding-bottom: 0%;
+
+}
+.significado .container .imagenss .imagem1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    }
+.significado .container .imagenss .imagem2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    }
+.significado .container .imagenss .imagem3{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    }
+.imagem1-1-1{
     
+    background-image: url(assets/saude.webp);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+    cursor: pointer;
+}
+.imagem1-2-2{
+
+    background-image: url(assets/autoestima\ final.jpg);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+    cursor: pointer;
+    
+}
+.imagem1-3-3{
+
+    background-image: url(assets/disposicao.webp);
+    background-position: 80%;
+    background-size: cover;
+    width: 22vw;
+    height: 30vh;
+    border: solid 2px black;
+    border-radius: 2%;
+    cursor: pointer;
+}
+.salvar{
+    width: 15vw;
+    height: 8vh;
+    margin-top: 4%;
+    border-radius: 5%;
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+}
+.palavron{
+    font-family: 'roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
 }

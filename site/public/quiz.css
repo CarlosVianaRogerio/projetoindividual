@@ -146,19 +146,6 @@
     flex-direction: column;
 
 }
-.containerResultado{
-    width: 60vw;
-    height: 80vh;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    border: solid 5px black;
-    border-radius: 4%;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-
-}
 .containerdescc{
     width: 21vw;
     background-color: #fbe77b;
@@ -169,25 +156,12 @@
     padding-left: 4%;
 
 }
-/* .results{
-    border: solid 2px black;
-    width: 55vw;
-    height: 79vh;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-} */
-/* .escritaResults{
-    font-size: 17px;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-
+.descResults{
+    font-family: 'roboto' sans-serif;
+    font: 500;
+    font-size: 18px;
 }
-h5{
-    font-size: 22px;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-} */
+
 .navegar{
     display: flex;
     font-family: 'roboto',sans-serif;
@@ -247,7 +221,7 @@ h5{
     
     width:21vw;
     height: 27vh;
-    background-image: url(assets/ResultsPratica.jpg);
+    background-image: url(assets/Ajuda.webp);
     background-size: cover;
 }
 .imgResultsGrafico{
@@ -266,4 +240,23 @@ h5{
     font-style: bold;
     font-weight: 700;
 
+
+}.containerResultado{
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: solid 5px black;
+    border-radius: 4%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.chart-container{
+    margin-top: 5%;
+    border: solid 2px black;
+    
 }

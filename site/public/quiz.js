@@ -4,6 +4,7 @@
     var resultado_costa = 0;
     var resultado_estresse = 0;
     var resultado_concentracao = 0;
+    var contador_sono = 0;
     var quizPag = 0;
 
     function voltar(){
@@ -54,6 +55,7 @@
     }
     function sonoSim(){
         resultado_sono ='sim'
+        contador_sono++
         avancar()
     }
     function sonoNao(){

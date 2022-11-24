@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="modal.js"></script>
     <script src="quiz.js"></script>
+    <script src="beneficio.js"></script>
     
     <title>Home Page</title>
 </head>
@@ -213,6 +214,42 @@
         
         </div>
     </section>
+
+    <section class="significado">
+        <div class="container">
+            <div class="perguntaGrande"><span class="escrita">Qual beneficios você considera mais importante pra você?</span></div>
+                <div class="imagenss">
+                    <div class="imagem1" onclick="imagem1()">
+                        <div class="imagem1-1-1" id = 'imagem1'></div>
+                        <span class="escrita">Saúde</span>
+                    </div>
+                    <div class="imagem2" onclick="imagem2()">
+                        <div class="imagem1-2-2" id = 'imagem2'></div>
+                        <span class="escrita">Autoestima</span>
+                    </div>
+                    <div class="imagem3" onclick="imagem3()">
+                        <div class="imagem1-3-3" id = 'imagem3'></div>
+                        <span class="escrita">Disposição</span>
+                    </div>
+                </div>
+            <div class="salvar"><span class="palavron">Salvar</span></div>
+            <div class="titulo"><span class="escrita"></span></div>
+            <div class ="botaozao">
+                <span class="palavrona">Gráficos</span></div>
+            </div>
+            
+            <div id="msg"></div>
+    </section>
+    <section class="grafico">
+        <div class="container">
+
+
+
+
+            
+        </div>
+    </section>
+
     <section class="footer">
         <div class="container">
             <span class="escrita">Bodybuild is Quality of Life</span>
@@ -244,7 +281,7 @@
                     <div class="containerMenor">
                         <button class="fechar">X</button>
                 <div class="titulo"><span class="escrita">QUIZ 1</span></div>
-                    <div class="pergunta"><span class="escrita">Tem problemas com autoestima ou desânimo?</span></div>
+                    <div class="pergunta"><span class="escrita">Tem problemas com autoestima?</span></div>
                         <div class="resposta">
                             <div class="boxin" onclick ="estimaSim()"><span class="escrita">SIM</span></div>
                             <div class="boxin" onclick ="estimaNao()"><span class="escrita">NÃO</span></div>
@@ -363,7 +400,7 @@
                 <div class="imgCima1">
                     <div class="imgResultsSono"></div>
                         <p class="escritaimg">Problems com o sono?</p>
-                        <div class="containerdescc"><p class="descResults">A insônia que a ansieadade a ansiedade traz, é diminuida significativamente com a musculação, além de cansar seu corpo com os exercícios, que ajudará você a pegar no sono</p></div>
+                        <div class="containerdescc"><p class="descResults">A insônia que a ansiedade causa, é diminuida significativamente, além de que cansar seu corpo com os exercícios, ajudará você a pegar no sono</p></div>
                 </div>
 
                 <div class="navegar">
@@ -430,8 +467,8 @@
                 <button class="fechar">X</button>
                 <div class="imgCima1">
                     <div class="imgResultsPratica"></div>
-                        <p class="escritaimg">Pratica musculação?</p>
-                        <div class="containerdescc"><p class="descResults">Está em um bom caminho, continue logo chegará a uma qualidade de vida excelente:)</p></div>
+                        <p class="escritaimgg">Veja o que a musculação pode te ajudar</p>
+                        <div class="containerdescc"><p class="descResults">Se já prática, continue, jajá chegará a uma qualidade de vida excelente, se não comece e verá a diferença</p></div>
                 </div>
 
                 <div class="navegar">
@@ -461,6 +498,7 @@
 
         <div class="modalQuiz" id="resultsReais" style="display: none;">
             <div class="containerResultado">
+                <div class="titulo"><span class="escritaa">Comparação entre praticantes e não praticantes de musculação</span></div>
                 <button class="fechar">X</button>
                 <div
                 class="chart-container"
@@ -471,6 +509,8 @@
             </div>
         </div>
         </section> 
+
+        
    
 </body>
 
@@ -481,15 +521,15 @@
       datasets: [
         {
           label: "Praticantes de musculação",
-          data: [5, 9, 7, 2, 8],
-          backgroundColor: ["rgba(255, 240, 0, 0.6)"],
+          data: [5, 9, 4, 2, 8],
+          backgroundColor: ["rgba(255, 240, 0, 0.8)"],
           borderColor: ["rgb(255, 240, 0)"],
           borderWidth: 1,
         },
         {
           label: "Não praticantes de musculação",
-          data: [10, 12, 5, 4, 9],
-          backgroundColor: ["rgba(0, 0, 0, 0.6)"],
+          data: [10, contador_sono, 7, 4, 9],
+          backgroundColor: ["rgba(0, 0, 0, 0.8)"],
           borderColor: ["rgb(0, 0, 0)"],
           borderWidth: 1,
         },
