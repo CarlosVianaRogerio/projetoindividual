@@ -255,3 +255,38 @@ function resultsAvancar(){
         return false;
 
     }
+    listarQuiz()
+    function listarQuiz(){
+        
+    fetch("/avisos/listarQuiz").then(function (resposta) {
+        if (resposta.ok) {
+            if (resposta.status == 204) {
+                
+                alert('Vazio')
+                throw "Nenhum resultado encontrado!!";
+            }
+
+            resposta.json().then(function (resposta) {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                
+                valores = [];
+                for (let i = 0; i < resposta.length; i++) {
+                    var publicacao = resposta[i]; 
+
+                      
+                      valores.push(resposta[i].contagem);
+                }
+                    console.log(publicacao);
+                    // valor() 
+                    // grafico()
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+          
+        });
+
+    }
