@@ -74,7 +74,7 @@ function editar(){
     }}
 
     listar()
-
+var valores = 0;
 function listar(){
     fetch("/avisos/listar").then(function (resposta) {
         if (resposta.ok) {
@@ -88,11 +88,16 @@ function listar(){
                 console.log("Dados recebidos: ", JSON.stringify(resposta));
 
                 
-                
+                valores = [];
                 for (let i = 0; i < resposta.length; i++) {
-                    var publicacao = resposta[i]; }
+                    var publicacao = resposta[i]; 
 
-                    console.log(publicacao)
+                      
+                      valores.push(resposta[i].contagem);
+                }
+                    alert(valores)
+                    valor() 
+                    grafico()
                 });
             } else {
                 throw ('Houve um erro na API!');
@@ -114,4 +119,20 @@ function listar(){
 
 function graficos(){
     var mostrar = document.getElementById('grafico').style.display='block'
+}
+var saude = 0;
+var autoestima = 0;
+var disposicao = 0;
+
+
+
+function valor(){
+
+    for (let index = 0; index < 3; index++) {
+        saude = valores[0];
+        autoestima = valores[1];
+        disposicao = valores[2];
+    }
+
+alert('alala' + saude)
 }

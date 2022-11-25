@@ -9,7 +9,11 @@ CREATE TABLE usuario (
     fkhabilidade int,
     foreign key (fkhabilidade) references habilidade (idhabilidade));
 
-select * from usuario;
+
+    
+select tipo, count(fkhabilidade) from usuario join habilidade on fkhabilidade = idhabilidade group by tipo;
+    
+    
 
 create table quiz (
 	idquiz int primary key auto_increment,
@@ -24,15 +28,12 @@ create table quiz (
     
 create table habilidade (
 	idhabilidade int primary key auto_increment,
-    saude int,
-    autoestima int,
-    disposicao int);
+    tipo varchar(10));
     
-    
-    alter table habilidade drop column disposicao;
-    alter table habilidade add column saude int;
-    alter table habilidade add column autoestima int;
-    alter table habilidade add column disposicao int;
+    insert into habilidade (tipo) values
+    ('Saude'),
+    ('Autoestima'),
+    ('Disposição');
     select * from habilidade;
     
     
