@@ -38,7 +38,7 @@ function imagem3(){
     favorito = 3}
 }
 
-function salvar(){
+function publicar(){
     var teste = true;
     if(favorito == 0){
         teste = false;
@@ -51,14 +51,43 @@ function salvar(){
     if(teste){
     salvo++
 
+        var idUsuario = sessionStorage.ID_USUARIO;
 
+        var corpo = {
+            titulo: favorito,
+            
+        }
 
+        fetch(`/avisos/publicar/${idUsuario}`, {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(corpo)
+        }).then(function (resposta) {
 
+            console.log("resposta: ", resposta);
 
+            if (resposta.ok) {
+                alert("Deu certo")
+                limparFormulario();
+                finalizarAguardar();
+            } else if (resposta.status == 404) {
+                alert("Deu 404!");
+            } else {
+                throw ("Houve um erro ao tentar realizar a postagem! Código da resposta: " + resposta.status);
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+
+    }
 
 
     }
-}
 
 
 
