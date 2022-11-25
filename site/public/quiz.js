@@ -213,6 +213,7 @@ function resultsAvancar(){
     //     document.getElementById("resultsEstima").style.display = "flex";
     // }
 
+    var quizVetor = 0;
     function publicar() {
         var idUsuario = sessionStorage.ID_USUARIO;
 
@@ -270,14 +271,22 @@ function resultsAvancar(){
                 console.log("Dados recebidos: ", JSON.stringify(resposta));
 
                 
-                valores = [];
+                quizVetor = [];
                 for (let i = 0; i < resposta.length; i++) {
                     var publicacao = resposta[i]; 
 
                       
-                      valores.push(resposta[i].contagem);
+                      quizVetor.push(resposta[i].pratica);
+                      quizVetor.push(resposta[i].autoestima);
+                      quizVetor.push(resposta[i].sono);
+                      quizVetor.push(resposta[i].costas);
+                      quizVetor.push(resposta[i].estresse);
+                      quizVetor.push(resposta[i].concentracao);
+                      quizVetor.push(resposta[i].qtd);
                 }
+                
                     console.log(publicacao);
+                    vetorQuiz()
                     // valor() 
                     // grafico()
                 });
@@ -290,3 +299,44 @@ function resultsAvancar(){
         });
 
     }
+var quizPratica1 = 0;
+var quizAutoestima1 = 0;
+var quizSono1 = 0;
+var quizCosta1 = 0;
+var quizEstresse1 = 0;
+var quizConcentracao1 = 0;
+
+var quizPratica2 = 0;
+var quizAutoestima2 = 0;
+var quizSono2 = 0;
+var quizCosta2 = 0;
+var quizEstresse2 = 0;
+var quizConcentracao2 = 0;
+
+    function vetorQuiz() {
+        for (let index = 0; index < 7; index++) {
+    
+        if(quizVetor[0] != 'null'){
+            quizPratica1 += quizVetor[0]
+            quizAutoestima1 += quizVetor[1];
+            quizSono1 += quizVetor[2];
+            quizCosta1 += quizVetor[3];
+            quizEstresse1  += quizVetor[4];
+            quizConcentracao1 += quizVetor[5];
+            quizAutoestima1 += quizVetor[6];
+
+
+        }else{
+            quizPratica2 += quizVetor[0]
+            quizAutoestima2 += quizVetor[1];
+            quizSono2 += quizVetor[2];
+            quizCosta2 += quizVetor[3];
+            quizEstresse2  += quizVetor[4];
+            quizConcentracao2 += quizVetor[5];
+            quizAutoestima2 += quizVetor[6];
+        }
+        
+    }
+            alert(quizSono1)
+            alert(quizSono2)
+}

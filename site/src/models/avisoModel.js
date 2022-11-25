@@ -12,7 +12,7 @@ function listar() {
 function listarQuiz() {
     console.log("ACESSEI O AVISO  MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listarQuiz()");
     var instrucao = `
-    select count(pratica), count(autoestima), count(sono), count(costas), count(estresse), count(concentracao), count(fkusuario) from quiz;
+    select pratica, autoestima, sono, costas, estresse, concentracao, fkusuario from quiz;
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
