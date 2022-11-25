@@ -73,6 +73,36 @@ function editar(){
         });
     }}
 
+    listar()
+
+function listar(){
+    fetch("/avisos/listar").then(function (resposta) {
+        if (resposta.ok) {
+            if (resposta.status == 204) {
+                
+                alert('Vazio')
+                throw "Nenhum resultado encontrado!!";
+            }
+
+            resposta.json().then(function (resposta) {
+                console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                
+                
+                for (let i = 0; i < resposta.length; i++) {
+                    var publicacao = resposta[i]; }
+
+                    console.log(publicacao)
+                });
+            } else {
+                throw ('Houve um erro na API!');
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+          
+        });
+    }
+    
 
 
 
