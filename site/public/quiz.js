@@ -38,52 +38,52 @@
     }
 }   
     function praticaSim(){
-        resultado_pratica ='sim'
+        resultado_pratica = 1
         avancar()
     }
     function praticaNao(){
-        resultado_pratica ='nao'
+        resultado_pratica = 'null';
         avancar()
     }
     function estimaSim(){
-        resultado_estima ='sim'
+        resultado_estima = 1
         avancar()
     }
     function estimaNao(){
-        resultado_estima ='nao'
+        resultado_estima = 'null'
         avancar()
     }
     function sonoSim(){
-        resultado_sono ='sim'
+        resultado_sono = 1
         contador_sono++
         avancar()
     }
     function sonoNao(){
-        resultado_sono ='nao'
+        resultado_sono = 'null'
         avancar()
     }
     function costaSim(){
-        resultado_costa ='sim'
+        resultado_costa = 1
         avancar()
     }
     function costaNao(){
-        resultado_costa ='nao'
+        resultado_costa = 'null'
         avancar()
     }
     function estresseSim(){
-        resultado_estresse ='sim'
+        resultado_estresse = 1
         avancar()
     }
     function estresseNao(){
-        resultado_estresse ='nao'
+        resultado_estresse = 'null'
         avancar()
     }
     function concentracaoSim(){
-        resultado_concentracao ='sim'
+        resultado_concentracao = 1
         avancar()
     }
     function concentracaoNao(){
-        resultado_concentracao ='nao'
+        resultado_concentracao = 'null'
         avancar()
     }
     function avancar(){
@@ -122,55 +122,31 @@
 } 
 
     function resultado(){
+        publicar()
         avancar()
     }
 
     var resultsPag = 0;
 
-    // function resultsVoltar(){
-    // if (resultsPag > 0){
-    // resultsPag--
-    // }
-    
-    // if (resultsPag == 0){
-    //     document.getElementById("resultsSono").style.display = "none";
-    //     document.getElementById("resultsPratica").style.display = "flex";
-    // }
-    // if (resultsPag == 1){
-    //     document.getElementById("resultsCosta").style.display = "none";
-    //     document.getElementById("resultsSono").style.display = "flex";
-    // }
-    // if (resultsPag == 2){
-    //     document.getElementById("resultsEstresse").style.display = "none";
-    //     document.getElementById("resultsCosta").style.display = "flex";
-    // }
-    // if (resultsPag == 3){
-    //     document.getElementById("resultsConcentracao").style.display = "none";
-    //     document.getElementById("resultsEstresse").style.display = "flex";
-    // }
-    // if (resultsPag == 4){
-    //     document.getElementById("resultsEstima").style.display = "none";
-    //     document.getElementById("resultsConcentracao").style.display = "flex";
-    // }
 
 
 function resultsAvancar(){
     if (resultsPag < 7){
     var teste = 1;
-    if (resultsPag == 0 && resultado_sono == 'sim'){
+    if (resultsPag == 0 && resultado_sono == 1){
         teste = 0
         resultsPag++
         document.getElementById("resultsPratica").style.display = "none";
         document.getElementById("resultsSono").style.display = "flex";
 
-    }else if (resultsPag == 1 && resultado_costa == 'sim'){
+    }else if (resultsPag == 1 && resultado_costa == 1){
         teste = 0
         resultsPag++
         document.getElementById("resultsPratica").style.display = "none";
         document.getElementById("resultsSono").style.display = "none";
         document.getElementById("resultsCosta").style.display = "flex";
 
-    }else if (resultsPag == 2 && resultado_estresse == 'sim'){
+    }else if (resultsPag == 2 && resultado_estresse == 1){
         teste = 0
         resultsPag++
         document.getElementById("resultsPratica").style.display = "none";
@@ -178,7 +154,7 @@ function resultsAvancar(){
         document.getElementById("resultsCosta").style.display = "none";
         document.getElementById("resultsEstresse").style.display = "flex";
     } 
-    else if (resultsPag == 3 && resultado_concentracao == 'sim'){
+    else if (resultsPag == 3 && resultado_concentracao == 1){
         teste = 0
         resultsPag++
         document.getElementById("resultsPratica").style.display = "none";
@@ -187,7 +163,7 @@ function resultsAvancar(){
         document.getElementById("resultsEstresse").style.display = "none";
         document.getElementById("resultsConcentracao").style.display = "flex";
 
-    }else if (resultsPag == 4 && resultado_estima == 'sim'){
+    }else if (resultsPag == 4 && resultado_estima == 1){
         teste = 0
         resultsPag++
         document.getElementById("resultsPratica").style.display = "none";
@@ -236,3 +212,46 @@ function resultsAvancar(){
     //     document.getElementById("pagina7").style.display = "none";
     //     document.getElementById("resultsEstima").style.display = "flex";
     // }
+
+    function publicar() {
+        var idUsuario = sessionStorage.ID_USUARIO;
+
+        var corpo = {
+            // titulo: form_postagem.titulo.value,
+            // descricao: form_postagem.descricao.value,
+            pratica: resultado_pratica,
+            autoestima: resultado_estima,
+            sono: resultado_sono,
+            costa: resultado_costa,
+            estresse: resultado_estresse,
+            concentracao: resultado_concentracao,
+            idUsuario: idUsuario
+        }
+
+        fetch(`/avisos/publicar/${idUsuario}`, {
+            method: "post",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(corpo)
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                alert('deu certo');
+                
+               
+            } else if (resposta.status == 404) {
+                window.alert("Deu 404!");
+            } else {
+                throw ("Houve um erro ao tentar realizar a postagem! Código da resposta: " + resposta.status);
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            
+        });
+
+        return false;
+
+    }

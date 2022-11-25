@@ -66,15 +66,30 @@ function pesquisarDescricao(req, res) {
 }
 
 function publicar(req, res) {
-    var titulo = req.body.titulo;
+    var pratica = req.body.pratica;
+    var autoestima = req.body.autoestima;
+    var sono = req.body.sono;
+    var costa = req.body.costa;
+    var estresse = req.body.estresse;
+    var concentracao = req.body.concentracao;
     var idUsuario = req.params.idUsuario;
 
-    if (titulo == undefined) {
+    if (pratica == undefined) {
         res.status(400).send("O título está indefinido!");
     } else if (idUsuario == undefined) {
         res.status(403).send("O id do usuário está indefinido!");
+    } else if (autoestima == undefined) {
+        res.status(400).send("O id do usuário está indefinido!");
+    } else if (sono == undefined) {
+        res.status(400).send("O id do usuário está indefinido!");
+    } else if (costa == undefined) {
+        res.status(400).send("O id do usuário está indefinido!");
+    } else if (estresse == undefined) {
+        res.status(400).send("O id do usuário está indefinido!");
+    } else if (concentracao == undefined) {
+        res.status(400).send("O id do usuário está indefinido!");
     } else {
-        avisoModel.publicar(titulo, idUsuario)
+        avisoModel.publicar(pratica, autoestima, sono, costa, estresse, concentracao, idUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
