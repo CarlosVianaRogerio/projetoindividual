@@ -50,7 +50,7 @@ function editar(){
 }
     if(teste){
     salvo++
-
+    
         fetch(`/avisos/editar/${sessionStorage.getItem("ID_USUARIO")}`, {
             method: "PUT",
             headers: {
@@ -71,6 +71,8 @@ function editar(){
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
         });
+    
+    location.reload();
     }}
 
     listar()
@@ -95,7 +97,6 @@ function listar(){
                       
                       valores.push(resposta[i].contagem);
                 }
-                    alert(valores)
                     valor() 
                     grafico()
                 });
@@ -134,5 +135,4 @@ function valor(){
         disposicao = valores[2];
     }
 
-alert('alala' + saude)
 }
