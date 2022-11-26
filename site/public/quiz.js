@@ -283,6 +283,7 @@ function resultsAvancar(){
                       quizVetor.push(resposta[i].estresse);
                       quizVetor.push(resposta[i].concentracao);
                       quizVetor.push(resposta[i].qtd);
+
                 }
                 
                     console.log(publicacao);
@@ -314,16 +315,17 @@ var quizEstresse2 = 0;
 var quizConcentracao2 = 0;
 
     function vetorQuiz() {
-        for (let index = 0; index < 7; index++) {
+        for (let index = 0; index < 8; index++) {
     
-        if(quizVetor[0] != 'null'){
-            quizPratica1 += quizVetor[0]
+        if(quizVetor[0] == 1){
+            quizPratica1 += quizVetor[0];
             quizAutoestima1 += quizVetor[1];
             quizSono1 += quizVetor[2];
             quizCosta1 += quizVetor[3];
             quizEstresse1  += quizVetor[4];
             quizConcentracao1 += quizVetor[5];
             quizAutoestima1 += quizVetor[6];
+            
 
 
         }else{
@@ -336,7 +338,8 @@ var quizConcentracao2 = 0;
             quizAutoestima2 += quizVetor[6];
         }
         
-    }
-            alert(quizSono1)
-            alert(quizSono2)
+    }       
+            
+            // alert(quizSono1)
+            // alert(quizSono2)
 }
