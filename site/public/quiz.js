@@ -240,7 +240,7 @@ function resultsAvancar(){
             console.log("resposta: ", resposta);
 
             if (resposta.ok) {
-                alert('deu certo');
+                
                 
                
             } else if (resposta.status == 404) {

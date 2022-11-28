@@ -508,7 +508,8 @@
                 style="position: relative; height: 35vh; width: 35vw">
                 <canvas id="myChart"></canvas>
               </div>
-              <div class="kpi">
+              <div class="tituloo"><span class="escritaa">Analises</span></div>
+                <div class="kpi">
                 <div class="analise1">
                     <div class="legenda1">
                         <span id="legenda1" class="legendaEsc" ></span>
@@ -631,24 +632,36 @@
   <script>
     
     function kpi(){
+        // Diferença em % dos problemas em geral
 
         var totalPratica = quizAutoestima1 + quizSono1+ quizCosta1+ quizEstresse1+ quizConcentracao1;
 
         var totalNaoPratica = quizAutoestima2 + quizSono2+ quizCosta2+ quizEstresse2+ quizConcentracao2;
 
-        var dif = (totalPratica * 100) / totalNaoPratica
+        var dif = 100 - ((totalPratica * 100) / totalNaoPratica) 
 
 
+        legenda1.innerHTML = `Quantidade de quiz respondidos :<span style="font-family: font-size: 20px; background-color: #fff500;" >${quizPratica1 + quizPratica2} </span>`
+
+        legenda2.innerHTML = `Maior problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" >${quizPratica1 + quizPratica2}</span>`
+
+        legenda3.innerHTML = `Quem pratica musculação tem <span style="font-family: font-size: 20px; background-color: #fff500;" >${dif.toFixed(2)}% </span> menos problemas`
+        
+
+        legenda4.innerHTML = `Menor problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" '>${quizPratica1 + quizPratica2} </span>`
 
 
+        // Maior problema relatado;
 
-        legenda1.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
+        var calculo_autoestima = quizAutoestima1 + quizAutoestima2;
+        var calculo_sono = quizSono1 + quizSono2;
+        var calculo_costa = quizCosta1 + quizCosta2;
+        var calculo_estresse = quizEstresse1 + quizEstresse2;
+        var calculo_concentracao = quizConcentracao1 + quizConcentracao2;
+        
+        
 
-        legenda2.innerHTML = `Não praticantes tem em média ${dif.toFixed(2)}% a mais de problemas do que quem pratica a musculação`
-
-        legenda3.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
-
-        legenda4.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
     }
+
   </script>
 </html>
