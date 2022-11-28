@@ -508,6 +508,9 @@
                 style="position: relative; height: 35vh; width: 35vw">
                 <canvas id="myChart"></canvas>
               </div>
+              <div class="kpi">
+                
+              </div>
 
             </div>
         </div>
@@ -518,20 +521,21 @@
 </body>
 
 <script>
+    function graficoQuiz(){
     const labels = ["Autoestima", "Sono", "Dor nas Costas", "Estresse", "Concentração"];
     const data = {
       labels: labels,
       datasets: [
         {
           label: "Praticantes de musculação",
-          data: [5, 6, 4, 2, 7],
+          data: [quizAutoestima1.toFixed(0), quizSono1.toFixed(0), quizCosta1.toFixed(0), quizEstresse1.toFixed(0), quizConcentracao1.toFixed(0)],
           backgroundColor: ["rgba(255, 240, 0, 0.8)"],
           borderColor: ["rgb(255, 240, 0)"],
           borderWidth: 1,
         },
         {
           label: "Não praticantes de musculação",
-          data: [10, 12, 7, 4, 9],
+          data: [quizAutoestima2.toFixed(0), quizSono2.toFixed(0), quizCosta2.toFixed(0), quizEstresse2.toFixed(0), quizConcentracao2.toFixed(0)],
           backgroundColor: ["rgba(0, 0, 0, 0.8)"],
           borderColor: ["rgb(0, 0, 0)"],
           borderWidth: 1,
@@ -551,9 +555,9 @@
         },
       },
     };
-  </script>
-  <script>
+
     const myChart = new Chart(document.getElementById("myChart"), config);
+}
   </script>
 
 <script>

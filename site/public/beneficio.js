@@ -121,18 +121,16 @@ function listar(){
 function graficos(){
     var mostrar = document.getElementById('grafico').style.display='block'
 }
+
 var saude = 0;
 var autoestima = 0;
 var disposicao = 0;
 
 
-
 function valor(){
-
-    for (let index = 0; index < 3; index++) {
+ 
         saude = valores[0];
         autoestima = valores[1];
         disposicao = valores[2];
-    }
-
+    
 }

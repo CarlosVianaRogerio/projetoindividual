@@ -283,13 +283,14 @@ function resultsAvancar(){
                       quizVetor.push(resposta[i].estresse);
                       quizVetor.push(resposta[i].concentracao);
                       quizVetor.push(resposta[i].qtd);
+                      
 
                 }
-                
+                vetorQuiz()
+                graficoQuiz()
                     console.log(publicacao);
-                    vetorQuiz()
-                    // valor() 
-                    // grafico()
+                
+                    
                 });
             } else {
                 throw ('Houve um erro na API!');
@@ -314,32 +315,69 @@ var quizCosta2 = 0;
 var quizEstresse2 = 0;
 var quizConcentracao2 = 0;
 
+var autoestima1_percent = 0;
+
     function vetorQuiz() {
-        for (let index = 0; index < 8; index++) {
+        var contador = 0;
+        var teste = 0;
+        for (let index = 0; index < 50; index++) {
+        
+        if(quizVetor[contador] == NaN){
+                break;
+        }
+
+        if(contador%7==0){
+            teste = contador;
+        }
     
-        if(quizVetor[0] == 1){
-            quizPratica1 += quizVetor[0];
-            quizAutoestima1 += quizVetor[1];
-            quizSono1 += quizVetor[2];
-            quizCosta1 += quizVetor[3];
-            quizEstresse1  += quizVetor[4];
-            quizConcentracao1 += quizVetor[5];
-            quizAutoestima1 += quizVetor[6];
+        if((quizVetor[teste] == 1 && quizVetor[teste] != 'null')){
+
+            quizPratica1 += quizVetor[contador];
+            contador++
+            quizAutoestima1 += quizVetor[contador];
+            contador++
+            quizSono1 += quizVetor[contador];
+            contador++
+            quizCosta1 += quizVetor[contador];
+            contador++
+            quizEstresse1  += quizVetor[contador];
+            contador++
+            quizConcentracao1 += quizVetor[contador];
+            contador++ 
+            contador++
             
+        
 
 
         }else{
-            quizPratica2 += quizVetor[0]
-            quizAutoestima2 += quizVetor[1];
-            quizSono2 += quizVetor[2];
-            quizCosta2 += quizVetor[3];
-            quizEstresse2  += quizVetor[4];
-            quizConcentracao2 += quizVetor[5];
-            quizAutoestima2 += quizVetor[6];
-        }
-        
-    }       
             
-            // alert(quizSono1)
-            // alert(quizSono2)
+            quizPratica2 ++;
+            contador++
+            quizAutoestima2 += quizVetor[contador];
+            contador++
+            quizSono2 += quizVetor[contador];
+            contador++
+            quizCosta2 += quizVetor[contador];
+            contador++
+            quizEstresse2  += quizVetor[contador];
+            contador++
+            quizConcentracao2 += quizVetor[contador];
+            contador++
+            contador++
+            
+        }    
+        
+    }    
+    quizAutoestima1 = quizAutoestima1 * 100 / quizPratica1;
+    quizSono1 = quizSono1 * 100 / quizPratica1;
+    quizCosta1 = quizCosta1 * 100 / quizPratica1;
+    quizEstresse1 = quizEstresse1 * 100 / quizPratica1;
+    quizConcentracao1 = quizConcentracao1 * 100 / quizPratica1;
+
+    quizAutoestima2 = quizAutoestima2 * 100 / quizPratica2;
+    quizSono2 = quizSono2 * 100 / quizPratica2;
+    quizCosta2 = quizCosta2 * 100 / quizPratica2;
+    quizEstresse2 = quizEstresse2 * 100 / quizPratica2;
+    quizConcentracao2 = quizConcentracao2 * 100 / quizPratica2;
+
 }
