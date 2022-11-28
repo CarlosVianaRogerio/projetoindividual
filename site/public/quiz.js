@@ -268,7 +268,7 @@ function resultsAvancar(){
             }
 
             resposta.json().then(function (resposta) {
-                console.log("Dados recebidos: ", JSON.stringify(resposta));
+                // console.log("Dados recebidos: ", JSON.stringify(resposta));
 
                 
                 quizVetor = [];
@@ -288,7 +288,8 @@ function resultsAvancar(){
                 }
                 vetorQuiz()
                 graficoQuiz()
-                    console.log(publicacao);
+                kpi()
+                    // console.log(publicacao);
                 
                     
                 });
@@ -381,3 +382,4 @@ var autoestima1_percent = 0;
     quizConcentracao2 = quizConcentracao2 * 100 / quizPratica2;
 
 }
+    

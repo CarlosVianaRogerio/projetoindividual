@@ -242,8 +242,8 @@
 
 
 }.containerResultado{
-    width: 60vw;
-    height: 80vh;
+    width: 67vw;
+    height: 85vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -259,4 +259,61 @@
     margin-top: 5%;
     border: solid 2px black;
     
+}
+.kpi {
+    margin-top: 3%;
+    border: black 2px solid;
+    width: 50vw;
+    height: 20vh;
+    display: flex
+}
+
+.kpi .analise1{
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kpi .analise2{
+    width: 25vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kpi .legenda1{
+    border: black 2px solid;
+    width: 25vw;
+    height: 10vh;
+    
+}
+.kpi .legenda2{
+    border: black 2px solid;
+    width: 25vw;
+    margin-top: 5%;
+    height: 10vh;
+}
+.kpi .legenda3{
+    border: black 2px solid;
+    width: 25vw;
+    height: 10vh;
+    
+}
+.kpi .legenda4{
+    border: black 2px solid;
+    width: 25vw;
+    margin-top: 5%;
+    height: 10vh;
+}
+.legendaEsc{
+    font-family: 'roboto',sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #fff500;
+    color: #000000;
 }

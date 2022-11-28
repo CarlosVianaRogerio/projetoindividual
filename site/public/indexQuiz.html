@@ -501,7 +501,7 @@
 
         <div class="modalQuiz" id="resultsReais" style="display: none;">
             <div class="containerResultado">
-                <div class="titulo"><span class="escritaa">Comparação entre praticantes e não praticantes de musculação</span></div>
+                <div class="titulo"><span class="escritaa">Comparação entre praticantes e não praticantes de musculação em %</span></div>
                 <button class="fechar">X</button>
                 <div
                 class="chart-container"
@@ -509,7 +509,23 @@
                 <canvas id="myChart"></canvas>
               </div>
               <div class="kpi">
-                
+                <div class="analise1">
+                    <div class="legenda1">
+                        <span id="legenda1" class="legendaEsc" ></span>
+                    </div>
+                    <div class="legenda2">
+                        <span id="legenda2" class="legendaEsc" ></span>
+                    </div>
+                </div>
+
+                <div class="analise2">
+                    <div class="legenda3">
+                        <span id="legenda3" class="legendaEsc" ></span>
+                    </div>
+                    <div class="legenda4">
+                        <span id="legenda4" class="legendaEsc" ></span>
+                    </div>
+                </div>
               </div>
 
             </div>
@@ -611,5 +627,28 @@
     window.onload = function(){
      window.scrollTo(0,4930)
 }
+  </script>
+  <script>
+    
+    function kpi(){
+
+        var totalPratica = quizAutoestima1 + quizSono1+ quizCosta1+ quizEstresse1+ quizConcentracao1;
+
+        var totalNaoPratica = quizAutoestima2 + quizSono2+ quizCosta2+ quizEstresse2+ quizConcentracao2;
+
+        var dif = (totalPratica * 100) / totalNaoPratica
+
+
+
+
+
+        legenda1.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
+
+        legenda2.innerHTML = `Não praticantes tem em média ${dif.toFixed(2)}% a mais de problemas do que quem pratica a musculação`
+
+        legenda3.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
+
+        legenda4.innerHTML = `Quantidade de quiz respondidos :${quizPratica1 + quizPratica2}`
+    }
   </script>
 </html>
