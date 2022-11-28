@@ -382,4 +382,3 @@ var autoestima1_percent = 0;
     quizConcentracao2 = quizConcentracao2 * 100 / quizPratica2;
 
 }
-    
