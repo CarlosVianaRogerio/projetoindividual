@@ -287,44 +287,51 @@
 }
 
 .kpi .legenda1{
-    border: black 4px solid;
-    width: 29vw;
+    border: black 3px solid;
+    width: 28vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2%;
+    border-radius: 4%;
+    margin-right: 2%;
     
 }
 .kpi .legenda2{
-    border: black 4px solid;
-    width: 29vw;
+    border: black 3px solid;
+    width: 28vw;
     margin-top: 5%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2%;
+    border-radius: 4%;
+    margin-right: 2%;
+    
 }
 .kpi .legenda3{
-    border: black 4px solid;
-    width: 29vw;
+    border: black 3px solid;
+    width: 28vw;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2%;
+    border-radius: 4%;
+    margin-left: 2%;
+    
     
 }
 .kpi .legenda4{
-    border: black 4px solid;
-    width: 29vw;
+    border: black 3px solid;
+    width: 28vw;
     margin-top: 5%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2%;
+    border-radius: 4%;
+    margin-left: 2%;
+    
 }
 .legendaEsc{
     font-family: 'roboto',sans-serif;

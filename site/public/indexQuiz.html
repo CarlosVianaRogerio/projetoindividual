@@ -640,18 +640,7 @@
 
         var dif = 100 - ((totalPratica * 100) / totalNaoPratica) 
 
-
-        legenda1.innerHTML = `Quantidade de quiz respondidos :<span style="font-family: font-size: 20px; background-color: #fff500;" >${quizPratica1 + quizPratica2} </span>`
-
-        legenda2.innerHTML = `Maior problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" >${quizPratica1 + quizPratica2}</span>`
-
-        legenda3.innerHTML = `Quem pratica musculação tem <span style="font-family: font-size: 20px; background-color: #fff500;" >${dif.toFixed(2)}% </span> menos problemas`
-        
-
-        legenda4.innerHTML = `Menor problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" '>${quizPratica1 + quizPratica2} </span>`
-
-
-        // Maior problema relatado;
+        // Maior e menor problema relatado;
 
         var calculo_autoestima = quizAutoestima1 + quizAutoestima2;
         var calculo_sono = quizSono1 + quizSono2;
@@ -659,8 +648,52 @@
         var calculo_estresse = quizEstresse1 + quizEstresse2;
         var calculo_concentracao = quizConcentracao1 + quizConcentracao2;
         
+        var maior = Math.max(calculo_autoestima, calculo_sono, calculo_costa, calculo_estresse, calculo_concentracao);
+        
+        if(calculo_autoestima == maior){
+            maior = 'Autoestima';
+        }
+        if(calculo_sono == maior){
+            maior = 'Sono';
+        }
+        if(calculo_costa == maior){
+            maior = 'Dor nas costas';
+        }
+        if(calculo_estresse == maior){
+            maior = 'Estresse';
+        }
+        if(calculo_concentracao == maior){
+            maior = 'Concentração';
+        }
+        var menor = Math.min(calculo_autoestima, calculo_sono, calculo_costa, calculo_estresse, calculo_concentracao);
+        
+        if(calculo_autoestima == menor){
+            menor = 'Autoestima';
+        }
+        if(calculo_sono == menor){
+            menor = 'Sono';
+        }
+        if(calculo_costa == menor){
+            menor = 'Dor nas costas';
+        }
+        if(calculo_estresse == menor){
+            menor = 'Estresse';
+        }
+        if(calculo_concentracao == menor){
+            menor = 'Concentração';
+        }
+
+        legenda1.innerHTML = `Quantidade de quiz consultados :<span style="font-family: font-size: 20px; background-color: #fff500;" >${quizPratica1 + quizPratica2} </span>`
+
+        legenda2.innerHTML = `Maior problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" >${maior}</span>`
+
+        legenda3.innerHTML = `Quem pratica musculação tem <span style="font-family: font-size: 20px; background-color: #fff500;" >${dif.toFixed(2)}% </span> menos problemas`
         
 
+        legenda4.innerHTML = `Menor problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" '>${menor} </span>`
+
+
+    
     }
 
   </script>
