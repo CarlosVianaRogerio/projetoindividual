@@ -19,8 +19,9 @@
             <div class="slogan">
                 <span>Bodybuild is Quality of Life</span></div>
                 <div class="navegacao">
-                    <span>Beneficios</span>
-                <span>Relatos</span>
+                    <span><a href="#beneficios">Beneficios</a></span>
+                <span><a href="#relatos">Relatos</a></span>
+                <a href="#quizz"> <span id="nome_usuario"></span></a>
             <p class="login" ><a href="index.html">Sair</a></p></div>
         </div>
     </section>
@@ -76,7 +77,7 @@
                 </div>
         </div>
     </section>
-    <section class="beneficios">
+    <section class="beneficios" id="beneficios">
         <div class="container">
             <div class="titulo"><span class="escrita">Quais são os beneficios gerais que a musculação traz?</span></div>
                 <div class="imagensBeneficios">
@@ -156,7 +157,7 @@
         </div>
     </section>
 
-    <section class="relatosPessoais">
+    <section class="relatosPessoais" id="relatos">
         <div class="container">
             <div class="titulo"><span class="escrita">Relatos Pessoais</span></div>
                 <div class="containerTudao">
@@ -197,7 +198,7 @@
                 </div>
         </div>
     </section>
-    <section class="quiz">
+    <section class="quiz" id="quizz">
         <div class="container">
             <div class="titulo">
                 <span class="escrita">Agora que conheceu algumas curiosidades e beneficios da musculação
@@ -691,10 +692,16 @@
         
 
         legenda4.innerHTML = `Menor problema relatado :<span style="font-family: font-size: 20px; background-color: #fff500;" '>${menor} </span>`
-
-
     
     }
+        nomeUsuario()
+        function nomeUsuario(){
+            var nome = sessionStorage.NOME_USUARIO;
+            nome_usuario.innerHTML = `Bem Vindo ${nome}`
+
+
+
+        }
 
   </script>
 </html>
