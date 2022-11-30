@@ -94,6 +94,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .ancora{
     margin-top: 1%;

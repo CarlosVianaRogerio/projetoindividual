@@ -579,6 +579,18 @@ width: 25vw;
     align-items: center;
     cursor: pointer;
 }
+.botaozaoo{
+    width: 27vw;
+    height: 22vh;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    border-radius: 4%;
+    background-color: #fff500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .palavrona{
     font-family: 'roboto', sans-serif;
     font-size: 70px;
@@ -681,11 +693,16 @@ width: 25vw;
     font-weight: 700;
 }
 .grafico .container{
-    border: solid 3px black;
+    border: solid 2px black;
     flex-direction: column;
     width: 80vw;
     height: 28vw;
     margin: auto;
     display: flex;
     align-items: center;
+    margin-bottom: 5%;
+    border-radius: 3%;
+}
+.slogan{
+    cursor: pointer;
 }

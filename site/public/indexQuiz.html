@@ -16,8 +16,8 @@
 <body onload="'.quiz'">
     <section class="navbar">
         <div class="container">
-            <div class="slogan">
-                <span>Bodybuild is Quality of Life</span></div>
+            <div class="slogan" onclick="atualizar()">
+                </a><span>Bodybuild is Quality of Life</span></div>
                 <div class="navegacao">
                     <span><a href="#beneficios">Beneficios</a></span>
                 <span><a href="#relatos">Relatos</a></span>
@@ -68,7 +68,7 @@
                         <div class="estiloVida">
                             <div class="title"><span class="escrita">Estilo de Vida:</span></div>
                                 <div class="desc"><span class="descri">
-                                    A partir de um tempo, se torna um hábito e um estilo de vida, você ficará viciado na sensação prazerosa de realizar musculação</span></div>
+                                    A partir de um tempo, se tornará um hábito e um estilo de vida, você ficará viciado na sensação prazerosa de realizar musculação</span></div>
                         </div>
                     </div>
                         <div class="containerimg">
@@ -112,7 +112,7 @@
 
                                 <div class="imgReal5"></div>
                                     <p class="escritaimgg">Alivia sintomas de depressão</p>
-                                    <div class="containerdesc"><span class="descimg">A endorfina quando é liberada, traz uma sensação de bem-estar</span></div>
+                                    <div class="containerdesc"><span class="descimg">A endorfina que é liberada com a musculação, traz uma sensação de bem-estar</span></div>
                         </div>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
             <div class="titulo"><span class="escrita">Relato do Criador do Site</span></div>
                 <div class="containertudin">
                     <div class="escritao"><span class="escrii">Iniciei na academia aos 15 anos de idade, fui em busca de mudança, pesava cerca de 93kg.<br><br>
-                        Com um pouco mais de 1 ano de treino, conseguir perde cerca de 21kg, chegando aos 72kg. Foi um ano de muito aprendizado, a mudança corporal foi importante pra mim, porém acredito que a mentalidade que eu adquiri com os treinos foi a coisa mais impactante na minha vida. <br><br>
+                        Com um pouco mais de 1 ano de treino, conseguir perder cerca de 21kg, chegando aos 72kg. Foi um ano de muito aprendizado, a mudança corporal foi importante pra mim, porém acredito que a mentalidade que eu adquiri com os treinos foi a coisa mais impactante na minha vida. <br><br>
                         <p class="escriii">Na academia ganhei muitas habilidades mentais, aprendi que para sair do lugar dependia apenas de mim mesmo, aprendi que ter constância e foco é mais importante do que motivação, aprendi que tudo tem um tempo e não adianta tentar pular etapas, aprendi também que para chegar aonde queremos, dói.</p></span></div>
                         <div class="imgeu">
                             <div class="eureal"></div>
@@ -218,7 +218,8 @@
 
     <section class="significado">
         <div class="container">
-            <div class="perguntaGrande"><span class="escrita">Qual beneficios você considera mais importante pra você?</span></div>
+            <div class="perguntaGrande"><span class="escrita">Me ajude neste estudo</span></div><br>
+            <div class="perguntaGrande"><span class="escrita">Qual beneficio você considera mais importante pra você?</span></div>
                 <div class="imagenss">
                     <div class="imagem1" onclick="imagem1()">
                         <div class="imagem1-1-1" id = 'imagem1'></div>
@@ -235,15 +236,17 @@
                 </div>
             <div class="salvar" onclick="editar()"><span class="palavron">Salvar</span></div>
             <div class="titulo"><span class="escrita"></span></div>
-            <div class ="botaozao" onclick="graficos()">
-                <span class="palavrona">Gráficos</span></div>
+            <br><br><br>
+            <div class="perguntaGrande"><span class="escrita">Veja os beneficios preferidos dos usuários</span></div>
+            <div class ="botaozaoo" onclick="graficos()">
+                <span class="palavrona">Resultados</span></div>
             </div>
             
             <div id="msg"></div>
     </section>
     <section class="grafico" id="grafico" style="display: none;">
         <div class="container">
-            <div class="titulo"><span class="escrita">Benefícios preferidos</span></div>
+            <div class="titulo"><span class="escrita">Benefícios escolhidos por outros usuários</span></div>
             <div
                 class="chart-container"
                 style="position: relative; height: 35vh; width: 35vw">
@@ -264,7 +267,7 @@
         <div class="modalQuiz" id="pagina1" style="display: flex;">
             <div class="container">
                 
-                <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><span class="simbolo"><</span></button></div>
+                <div class="voltar"><button class= "botaoVoltar" onclick="voltar()"><span class="simbolo"></span></button></div>
                     <div class="containerMenor">
                         <button class="fechar">X</button>
                 <div class="titulo"><span class="escrita">QUIZ ! ! !</span></div>
@@ -387,7 +390,7 @@
                 <div class="imgCima1">
                     <div class="imgResultsEstima"></div>
                         <p class="escritaimg">Problemas com a autoestima?</p>
-                        <div class="containerdescc"><p class="descResults">A mudança corporal e a liberação de hormonios produzidos pela musculação fará com que você tenha uma maior autoestima</p></div>
+                        <div class="containerdescc"><p class="descResults">A mudança corporal e a liberação de hormonios produzidos pela musculação fará com que você tenha um aumento na autoestima</p></div>
                 </div>
 
                 <div class="navegar">
@@ -403,7 +406,7 @@
                 <button class="fechar">X</button>
                 <div class="imgCima1">
                     <div class="imgResultsSono"></div>
-                        <p class="escritaimg">Problems com o sono?</p>
+                        <p class="escritaimg">Problemas com o sono?</p>
                         <div class="containerdescc"><p class="descResults">A insônia que a ansiedade causa, é diminuida significativamente, além de que cansar seu corpo com os exercícios, ajudará você a pegar no sono</p></div>
                 </div>
 
@@ -455,7 +458,7 @@
                 <div class="imgCima1">
                     <div class="imgResultsConcentracao"></div>
                         <p class="escritaimg">Dificuldades de concentração?</p>
-                        <div class="containerdescc"><p class="descResults">Você libera endorfina durante os treinos, isso fará com que seu cerebro funcione melhor, e isso fará com que seu raciocínio melhor</p></div>
+                        <div class="containerdescc"><p class="descResults">Você libera endorfina durante os treinos, isso fará com que seu cerebro funcione melhor, e que seu raciocínio melhore</p></div>
                 </div>
 
                 <div class="navegar">
@@ -587,8 +590,8 @@
         {
           label: "Beneficíos preferidos",
           data: [saude],
-          backgroundColor: ["rgba(255, 240, 0, 0.8)"],
-          borderColor: ["rgb(255, 240, 0)"],
+          backgroundColor: ["rgba(255, 0, 0, 0.8)"],
+          borderColor: ["rgb(255, 0, 0)"],
           borderWidth: 1,
         },
         {
@@ -601,8 +604,8 @@
         {
           label: "Beneficíos preferidos",
           data: [disposicao],
-          backgroundColor: ["rgba(255, 240, 0, 0.8)"],
-          borderColor: ["rgb(255, 240, 0)"],
+          backgroundColor: ["rgba(0, 0, 0, 0.8)"],
+          borderColor: ["rgb(0, 0, 0)"],
           borderWidth: 1,
         },
         
@@ -697,11 +700,12 @@
         nomeUsuario()
         function nomeUsuario(){
             var nome = sessionStorage.NOME_USUARIO;
-            nome_usuario.innerHTML = `Bem Vindo ${nome}`
-
-
+            nome_usuario.innerHTML = `${nome}`
 
         }
 
+        function atualizar(){
+            location.reload()
+        }
   </script>
 </html>

@@ -62,7 +62,7 @@ function editar(){
         }).then(function (resposta) {
 
             if (resposta.ok) {
-                
+                alert('Muito obrigado, resposta salva com sucesso')
             } else if (resposta.status == 404) {
                 window.alert("Deu 404!");
             } else {
